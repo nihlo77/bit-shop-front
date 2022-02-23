@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-yellow {
+    background-color: yellowgreen;
+}
+
+.bg-pink {
+    background-color: palevioletred;
+}
+
+
+.card-size {
+    width: 20rem;
+}

@@ -1,0 +1,48 @@
+
+<div class="">
+    <!-- banner -->
+    <header class="w-100 bg-yellow text-center text-white p-5">
+        <h1 class="display-4 text-black" style="font-style: italic;">Adquiere lo mejor de nuestra plataforma</h1>
+    </header>
+
+    <section class="d-flex flex-wrap justify-content-center mt-3">
+        <div class="card card-size m-3">
+            <img src="../../../assets/img/IMG_1686.jpg" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card-body">
+                <p class="card-text">MLB - Worlwide best baseball league</p>
+            </div>
+        </div>
+        <div class="card card-size m-3">
+            <img src="../../../assets/img/IMG_1686.jpg" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card-body">
+                <p class="card-text">MLB - Worlwide best baseball league</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- products container -->
+    <section class="mt-3">
+        <div class="d-flex flex-wrap justify-content-center" *ngIf="leagues; else noLeagues">
+            <div *ngFor="let league of leagues">
+                <div class="card card-size m-2">
+                    <div>
+                        <img class="img-fluid rounded-top" src="../../../assets/img/IMG_1693.jpg" alt="producto" />
+                    </div>
+                    <div class="mt-3">
+                        <h4 class="small text-center">{{ league.name }}</h4>
+                        <p class="text-center">Users {{ league.users }}</p>
+                        <div class="text-center p-3">
+                            <a class="btn btn-warning" href="">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ng-template #noLeagues> Other leagues soon </ng-template>
+    </section>
+</div>
